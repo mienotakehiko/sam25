@@ -1,0 +1,868 @@
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 153, characters 7-19:
+Warning: identifier path_secret_x rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 154, characters 7-19:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 165, characters 32-34:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 173, characters 10-22:
+Warning: identifier path_secret_a rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 174, characters 10-15:
+Warning: identifier myskey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 175, characters 10-15:
+Warning: identifier mypkey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 176, characters 10-22:
+Warning: identifier path_secret_x rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 178, characters 10-22:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 195, characters 18-26:
+Warning: identifier commitMSG rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 196, characters 10-22:
+Warning: identifier path_secret_w rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 197, characters 10-22:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 198, characters 10-12:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 207, characters 33-35:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 253, characters 18-26:
+Warning: identifier AlicePkey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 260, characters 9-21:
+Warning: identifier path_secret_x rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 275, characters 9-21:
+Warning: identifier path_secret_x rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 277, characters 9-21:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 278, characters 9-11:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 289, characters 16-24:
+Warning: identifier commitMSG rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 290, characters 10-22:
+Warning: identifier path_secret_w rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 291, characters 10-22:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 292, characters 10-12:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 301, characters 33-35:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 311, characters 13-25:
+Warning: identifier path_secret_b rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 312, characters 13-18:
+Warning: identifier myskey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 313, characters 13-18:
+Warning: identifier mypkey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 314, characters 13-25:
+Warning: identifier path_secret_w rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 315, characters 13-25:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 317, characters 41-43:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 324, characters 14-18:
+Warning: identifier wskey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 325, characters 14-18:
+Warning: identifier wpkey rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 365, characters 9-21:
+Warning: identifier path_secret_w rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 386, characters 9-21:
+Warning: identifier path_secret_w rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 387, characters 9-21:
+Warning: identifier commit_secret rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 388, characters 9-11:
+Warning: identifier mac rebound.
+File "C:\mieno\SAM25\code\git-code\Withdraw_no2.pv", line 400, characters 10-14:
+Warning: identifier wskey rebound.
+Linear part: No equation.
+Convergent part:
+Dec(skey_,Enc(GenPkey(skey_),plain_)) = plain_
+GetPathSecret_fromWelcome(skey_,GenWelcomeMSG(GenPkey(skey_),path_secret_,joiner_secret_,signature_)) = path_secret_
+GetJoinerSecret_fromWelcome(skey_,GenWelcomeMSG(GenPkey(skey_),path_secret_,joiner_secret_,signature_)) = joiner_secret_
+GetSignature_fromWelcome(skey_,GenWelcomeMSG(GenPkey(skey_),path_secret_,joiner_secret_,signature_)) = signature_
+GetPathSecret_fromCommit(skey_,GenCommitMSG(GenPkey(skey_),path_secret_,mac_)) = path_secret_
+GetMAC_fromCommit(skey_,GenCommitMSG(GenPkey(skey_),path_secret_,mac_)) = mac_
+Completing equations...
+Completed equations:
+GetMAC_fromCommit(skey_,GenCommitMSG(GenPkey(skey_),path_secret_,mac_)) = mac_
+GetPathSecret_fromCommit(skey_,GenCommitMSG(GenPkey(skey_),path_secret_,mac_)) = path_secret_
+GetSignature_fromWelcome(skey_,GenWelcomeMSG(GenPkey(skey_),path_secret_,joiner_secret_,signature_)) = signature_
+GetJoinerSecret_fromWelcome(skey_,GenWelcomeMSG(GenPkey(skey_),path_secret_,joiner_secret_,signature_)) = joiner_secret_
+GetPathSecret_fromWelcome(skey_,GenWelcomeMSG(GenPkey(skey_),path_secret_,joiner_secret_,signature_)) = path_secret_
+Dec(skey_,Enc(GenPkey(skey_),plain_)) = plain_
+Process 0 (that is, the initial process):
+{1}new ASsignkey: Signkey;
+{2}let ASverifyKey: Verifykey = GenVerifyKey(ASsignkey) in
+{3}new AliceSkey: Skey;
+{4}let AlicePkey: Pkey = GenPkey(AliceSkey) in
+{5}new AliceSignkey: Signkey;
+{6}let AliceVerifyKey: Verifykey = GenVerifyKey(AliceSignkey) in
+{7}new BobSkey: Skey;
+{8}let BobPkey: Pkey = GenPkey(BobSkey) in
+{9}new BobSignkey: Signkey;
+{10}let BobVerifyKey: Verifykey = GenVerifyKey(BobSignkey) in
+{11}new CharlieSkey: Skey;
+{12}let CharliePkey: Pkey = GenPkey(CharlieSkey) in
+{13}new CharlieSignkey: Signkey;
+{14}let CharlieVerifyKey: Verifykey = GenVerifyKey(CharlieSignkey) in
+{15}out(PublicCh, ASverifyKey);
+{16}out(PublicCh, (AlicePkey,AliceVerifyKey,GenSign(ASsignkey,KPGTBS(AlicePkey,AliceVerifyKey))));
+{17}out(PublicCh, (BobPkey,BobVerifyKey,GenSign(ASsignkey,KPGTBS(BobPkey,BobVerifyKey))));
+{18}out(PublicCh, (CharliePkey,CharlieVerifyKey,GenSign(ASsignkey,KPGTBS(CharliePkey,CharlieVerifyKey))));
+(
+    {19}let mysignkey: Signkey = AliceSignkey in
+    {20}let mykpgSkey: Skey = AliceSkey in
+    {21}new epoch_secret_0: Secret;
+    {22}new path_secret_a: Secret;
+    {23}let myskey: Skey = GenSkey(path_secret_a) in
+    {24}let mypkey: Pkey = GenPkey(myskey) in
+    {25}let path_secret_x: Secret = DeriveNextPathSecret(path_secret_a) in
+    {26}let commit_secret: Secret = DeriveNextPathSecret(path_secret_x) in
+    {27}let joiner_secret_0: Secret = DeriveJoinerSecret(epoch_secret_0,commit_secret) in
+    {28}in(PublicCh, (BobkpgPkey: Pkey,BobkpgVerifyKey: Verifykey,BobkpgSign: Signature));
+    {29}let BobkpgTBS: bitstring = KPGTBS(BobkpgPkey,BobkpgVerifyKey) in
+    {30}if Verify(ASverifyKey,BobkpgSign,BobkpgTBS) then
+    {31}out(BobCh, GenWelcomeMSG(BobkpgPkey,path_secret_x,joiner_secret_0,GenSign(mysignkey,WelcomeTBS(path_secret_x,joiner_secret_0))));
+    {32}let epoch_secret_1: Secret = DeriveEpochSecret(joiner_secret_0) in
+    {33}let membership_secret_1: Secret = DeriveMembershipSecret(epoch_secret_1) in
+    {34}let mackey1: MACkey = GenMACkey(membership_secret_1) in
+    {35}out(PublicCh, (mypkey,GenMAC(mackey1,Alice_Pkey_S2,Pkey2bitstring(mypkey))));
+    {36}in(AliceCh, commitMSG: Cipher);
+    {37}let path_secret_x_1: Secret = GetPathSecret_fromCommit(myskey,commitMSG) in
+    {38}let commit_secret_1: Secret = DeriveNextPathSecret(path_secret_x_1) in
+    {39}let mac: MAC = GetMAC_fromCommit(myskey,commitMSG) in
+    {40}if (mac = GenMAC(mackey1,Path_Secret_X_S3,Secret2bitstring(path_secret_x_1))) then
+    {41}let joiner_secret_1: Secret = DeriveJoinerSecret(epoch_secret_1,commit_secret_1) in
+    {42}let epoch_secret_2: Secret = DeriveEpochSecret(joiner_secret_1) in
+    {43}let membership_secret_2: Secret = DeriveMembershipSecret(epoch_secret_2) in
+    {44}let mackey2: MACkey = GenMACkey(membership_secret_2) in
+    {45}in(PublicCh, (BobPkey_1: Pkey,mac_1: MAC));
+    {46}if (mac_1 = GenMAC(mackey2,Bob_Pkey_S3,Pkey2bitstring(BobPkey_1))) then
+    {47}in(PublicCh, (CharliekpgPkey: Pkey,CharlieVerifyKey_1: Verifykey,CharliekpgSign: Signature));
+    {48}let CharliekpgTBS: bitstring = KPGTBS(CharliekpgPkey,CharlieVerifyKey_1) in
+    {49}if Verify(ASverifyKey,CharliekpgSign,CharliekpgTBS) then
+    {50}new path_secret_a_1: Secret;
+    {51}let myskey_1: Skey = GenSkey(path_secret_a_1) in
+    {52}let mypkey_1: Pkey = GenPkey(myskey_1) in
+    {53}let path_secret_x_2: Secret = DeriveNextPathSecret(path_secret_a_1) in
+    {54}let path_secret_w: Secret = DeriveNextPathSecret(path_secret_x_2) in
+    {55}let commit_secret_2: Secret = DeriveNextPathSecret(path_secret_w) in
+    {56}let joiner_secret_2: Secret = DeriveJoinerSecret(epoch_secret_2,commit_secret_2) in
+    {57}out(CharlieCh, GenWelcomeMSG(CharliekpgPkey,path_secret_w,joiner_secret_2,GenSign(mysignkey,WelcomeTBS(path_secret_w,joiner_secret_2))));
+    {58}let epoch_secret_3: Secret = DeriveEpochSecret(joiner_secret_2) in
+    {59}let membership_secret_3: Secret = DeriveMembershipSecret(epoch_secret_3) in
+    {60}let mackey3: MACkey = GenMACkey(membership_secret_3) in
+    {61}out(BobCh, GenCommitMSG(BobPkey_1,path_secret_x_2,GenMAC(mackey2,Path_Secret_X_S4,Secret2bitstring(path_secret_x_2))));
+    {62}out(PublicCh, (mypkey_1,GenMAC(mackey3,Alice_Pkey_S4,Pkey2bitstring(mypkey_1))));
+    {63}let xskey: Skey = GenSkey(path_secret_x_2) in
+    {64}let xpkey: Pkey = GenPkey(xskey) in
+    {65}out(PublicCh, (xpkey,GenMAC(mackey3,X_Pkey_S4,Pkey2bitstring(xpkey))));
+    {66}in(AliceCh, commitMSG_1: Cipher);
+    {67}let path_secret_w_1: Secret = GetPathSecret_fromCommit(xskey,commitMSG_1) in
+    {68}let commit_secret_3: Secret = DeriveNextPathSecret(path_secret_w_1) in
+    {69}let mac_2: MAC = GetMAC_fromCommit(xskey,commitMSG_1) in
+    {70}if (mac_2 = GenMAC(mackey3,Path_Secret_W_S5,Secret2bitstring(path_secret_w_1))) then
+    {71}let joiner_secret_3: Secret = DeriveJoinerSecret(epoch_secret_3,commit_secret_3) in
+    {72}let epoch_secret_4: Secret = DeriveEpochSecret(joiner_secret_3) in
+    {73}let membership_secret_4: Secret = DeriveMembershipSecret(epoch_secret_4) in
+    {74}let mackey4: MACkey = GenMACkey(membership_secret_4) in
+    {75}in(PublicCh, (wpkey: Pkey,mac_3: MAC));
+    {76}if (mac_3 = GenMAC(mackey4,W_Pkey_S5,Pkey2bitstring(wpkey))) then
+    {77}let wskey: Skey = GenSkey(path_secret_w_1) in
+    {78}in(PublicCh, msg: Cipher);
+    {79}if (Dec(wskey,msg) = MESSAGE) then
+    {80}event RECV(AliceID);
+    {81}in(AliceCh, revoke_mac: MAC);
+    {82}if (revoke_mac = GenMAC(mackey4,Alice_Revoke_P8,Alice_Revoke_P8)) then
+    {83}phase 1;
+    {84}out(PublicCh, (epoch_secret_4,path_secret_a_1,path_secret_x_2,path_secret_w_1))
+) | (
+    {85}let mysignkey_1: Signkey = BobSignkey in
+    {86}let mykpgSkey_1: Skey = BobSkey in
+    {87}in(PublicCh, (AlicePkey_1: Pkey,AliceVerifyKey_1: Verifykey,AliceSign: Signature));
+    {88}let AlicekpgTBS: bitstring = KPGTBS(AlicePkey_1,AliceVerifyKey_1) in
+    {89}if Verify(ASverifyKey,AliceSign,AlicekpgTBS) then
+    {90}in(BobCh, welcomeMSG: Cipher);
+    {91}let path_secret_x_3: Secret = GetPathSecret_fromWelcome(mykpgSkey_1,welcomeMSG) in
+    {92}let joiner_secret_0_1: Secret = GetJoinerSecret_fromWelcome(mykpgSkey_1,welcomeMSG) in
+    {93}let epoch_secret: Secret = DeriveEpochSecret(joiner_secret_0_1) in
+    {94}let signature: Signature = GetSignature_fromWelcome(mykpgSkey_1,welcomeMSG) in
+    {95}if Verify(AliceVerifyKey_1,signature,WelcomeTBS(path_secret_x_3,joiner_secret_0_1)) then
+    {96}let membership_secret: Secret = DeriveMembershipSecret(epoch_secret) in
+    {97}let mackey1_1: MACkey = GenMACkey(membership_secret) in
+    {98}in(PublicCh, (AlicePkey_2: Pkey,mac_4: MAC));
+    {99}if (mac_4 = GenMAC(mackey1_1,Alice_Pkey_S2,Pkey2bitstring(AlicePkey_2))) then
+    {100}new path_secret_b: Secret;
+    {101}let myskey_2: Skey = GenSkey(path_secret_b) in
+    {102}let mypkey_2: Pkey = GenPkey(myskey_2) in
+    {103}let path_secret_x_4: Secret = DeriveNextPathSecret(path_secret_b) in
+    {104}let commit_secret_4: Secret = DeriveNextPathSecret(path_secret_x_4) in
+    {105}out(AliceCh, GenCommitMSG(AlicePkey_2,path_secret_x_4,GenMAC(mackey1_1,Path_Secret_X_S3,Secret2bitstring(path_secret_x_4))));
+    {106}let joiner_secret: Secret = DeriveJoinerSecret(epoch_secret,commit_secret_4) in
+    {107}let epoch_secret_5: Secret = DeriveEpochSecret(joiner_secret) in
+    {108}let membership_secret_5: Secret = DeriveMembershipSecret(epoch_secret_5) in
+    {109}let mackey2_1: MACkey = GenMACkey(membership_secret_5) in
+    {110}out(PublicCh, (mypkey_2,GenMAC(mackey2_1,Bob_Pkey_S3,Pkey2bitstring(mypkey_2))));
+    {111}in(BobCh, commitMSG_2: Cipher);
+    {112}let path_secret_x_5: Secret = GetPathSecret_fromCommit(myskey_2,commitMSG_2) in
+    {113}let path_secret_w_2: Secret = DeriveNextPathSecret(path_secret_x_5) in
+    {114}let commit_secret_5: Secret = DeriveNextPathSecret(path_secret_w_2) in
+    {115}let mac_5: MAC = GetMAC_fromCommit(myskey_2,commitMSG_2) in
+    {116}if (mac_5 = GenMAC(mackey2_1,Path_Secret_X_S4,Secret2bitstring(path_secret_x_5))) then
+    {117}let joiner_secret_4: Secret = DeriveJoinerSecret(epoch_secret_5,commit_secret_5) in
+    {118}let epoch_secret_6: Secret = DeriveEpochSecret(joiner_secret_4) in
+    {119}let membership_secret_6: Secret = DeriveMembershipSecret(epoch_secret_6) in
+    {120}let mackey3_1: MACkey = GenMACkey(membership_secret_6) in
+    {121}let xskey_1: Skey = GenSkey(path_secret_x_5) in
+    {122}in(BobCh, commitMSG_3: Cipher);
+    {123}let path_secret_w_3: Secret = GetPathSecret_fromCommit(xskey_1,commitMSG_3) in
+    {124}let commit_secret_6: Secret = DeriveNextPathSecret(path_secret_w_3) in
+    {125}let mac_6: MAC = GetMAC_fromCommit(xskey_1,commitMSG_3) in
+    {126}if (mac_6 = GenMAC(mackey3_1,Path_Secret_W_S5,Secret2bitstring(path_secret_w_3))) then
+    {127}let joiner_secret_5: Secret = DeriveJoinerSecret(epoch_secret_6,commit_secret_6) in
+    {128}let epoch_secret_7: Secret = DeriveEpochSecret(joiner_secret_5) in
+    {129}let membership_secret_7: Secret = DeriveMembershipSecret(epoch_secret_7) in
+    {130}let mackey4_1: MACkey = GenMACkey(membership_secret_7) in
+    {131}in(PublicCh, (wpkey_1: Pkey,mac_7: MAC));
+    {132}if (mac_7 = GenMAC(mackey4_1,W_Pkey_S5,Pkey2bitstring(wpkey_1))) then
+    {133}let wskey_1: Skey = GenSkey(path_secret_w_3) in
+    {134}in(PublicCh, msg_1: Cipher);
+    {135}if (Dec(wskey_1,msg_1) = MESSAGE) then
+    {136}event RECV(BobID);
+    {137}new path_secret_b_1: Secret;
+    {138}let myskey_3: Skey = GenSkey(path_secret_b_1) in
+    {139}let mypkey_3: Pkey = GenPkey(myskey_3) in
+    {140}let path_secret_w_4: Secret = DeriveNextPathSecret(path_secret_b_1) in
+    {141}let commit_secret_7: Secret = DeriveNextPathSecret(path_secret_w_4) in
+    {142}in(PublicCh, (CharliePkey_1: Pkey,mac_8: MAC));
+    {143}if (mac_8 = GenMAC(mackey4_1,Charlie_Pkey_S5,Pkey2bitstring(CharliePkey_1))) then
+    {144}out(CharlieCh, GenCommitMSG(CharliePkey_1,path_secret_w_4,GenMAC(mackey4_1,Path_Secret_W_P7,Secret2bitstring(path_secret_w_4))));
+    {145}phase 1;
+    {146}out(PublicCh, (mypkey_3,GenMAC(mackey4_1,Bob_Pkey_P7,Pkey2bitstring(mypkey_3))));
+    {147}let wskey_2: Skey = GenSkey(path_secret_w_4) in
+    {148}let wpkey_2: Pkey = GenPkey(wskey_2) in
+    {149}out(PublicCh, (wpkey_2,GenMAC(mackey4_1,W_Pkey_P7,Pkey2bitstring(wpkey_2))));
+    {150}event SEND(BobID);
+    {151}out(PublicCh, Enc(wpkey_2,MESSAGE2))
+) | (
+    {152}let mysignkey_2: Signkey = CharlieSignkey in
+    {153}let mykpgSkey_2: Skey = CharlieSkey in
+    {154}in(PublicCh, (AlicePkey_3: Pkey,AliceVerifyKey_2: Verifykey,AliceSign_1: Signature));
+    {155}let AlicekpgTBS_1: bitstring = KPGTBS(AlicePkey_3,AliceVerifyKey_2) in
+    {156}if Verify(ASverifyKey,AliceSign_1,AlicekpgTBS_1) then
+    {157}in(CharlieCh, welcomeMSG_1: Cipher);
+    {158}let path_secret_w_5: Secret = GetPathSecret_fromWelcome(mykpgSkey_2,welcomeMSG_1) in
+    {159}let joiner_secret_6: Secret = GetJoinerSecret_fromWelcome(mykpgSkey_2,welcomeMSG_1) in
+    {160}let signature_1: Signature = GetSignature_fromWelcome(mykpgSkey_2,welcomeMSG_1) in
+    {161}if Verify(AliceVerifyKey_2,signature_1,WelcomeTBS(path_secret_w_5,joiner_secret_6)) then
+    {162}let epoch_secret_8: Secret = DeriveEpochSecret(joiner_secret_6) in
+    {163}let membership_secret_8: Secret = DeriveMembershipSecret(epoch_secret_8) in
+    {164}let mackey3_2: MACkey = GenMACkey(membership_secret_8) in
+    {165}in(PublicCh, (xpkey_1: Pkey,mac_9: MAC));
+    {166}if (mac_9 = GenMAC(mackey3_2,X_Pkey_S4,Pkey2bitstring(xpkey_1))) then
+    {167}new path_secret_c: Secret;
+    {168}let myskey_4: Skey = GenSkey(path_secret_c) in
+    {169}let mypkey_4: Pkey = GenPkey(myskey_4) in
+    {170}let path_secret_w_6: Secret = DeriveNextPathSecret(path_secret_c) in
+    {171}let wskey_3: Skey = GenSkey(path_secret_w_6) in
+    {172}let wpkey_3: Pkey = GenPkey(wskey_3) in
+    {173}let commit_secret_8: Secret = DeriveNextPathSecret(path_secret_w_6) in
+    {174}out(AliceCh, GenCommitMSG(xpkey_1,path_secret_w_6,GenMAC(mackey3_2,Path_Secret_W_S5,Secret2bitstring(path_secret_w_6))));
+    {175}out(BobCh, GenCommitMSG(xpkey_1,path_secret_w_6,GenMAC(mackey3_2,Path_Secret_W_S5,Secret2bitstring(path_secret_w_6))));
+    {176}let joiner_secret_7: Secret = DeriveJoinerSecret(epoch_secret_8,commit_secret_8) in
+    {177}let epoch_secret_9: Secret = DeriveEpochSecret(joiner_secret_7) in
+    {178}let membership_secret_9: Secret = DeriveMembershipSecret(epoch_secret_9) in
+    {179}let mackey4_2: MACkey = GenMACkey(membership_secret_9) in
+    {180}out(PublicCh, (mypkey_4,GenMAC(mackey4_2,Charlie_Pkey_S5,Pkey2bitstring(mypkey_4))));
+    {181}out(PublicCh, (wpkey_3,GenMAC(mackey4_2,W_Pkey_S5,Pkey2bitstring(wpkey_3))));
+    {182}out(PublicCh, Enc(wpkey_3,MESSAGE));
+    {183}in(CharlieCh, commitMSG_4: Cipher);
+    {184}let path_secret_w_7: Secret = GetPathSecret_fromCommit(myskey_4,commitMSG_4) in
+    {185}let commit_secret_9: Secret = DeriveNextPathSecret(path_secret_w_7) in
+    {186}let mac_10: MAC = GetMAC_fromCommit(myskey_4,commitMSG_4) in
+    {187}if (mac_10 = GenMAC(mackey4_2,Path_Secret_W_P7,Secret2bitstring(path_secret_w_7))) then
+    {188}out(AliceCh, (Alice_Revoke_P8,GenMAC(mackey4_2,Alice_Revoke_P8,Alice_Revoke_P8)));
+    {189}phase 1;
+    {190}let joiner_secret_8: Secret = DeriveJoinerSecret(epoch_secret_9,commit_secret_9) in
+    {191}let epoch_secret_10: Secret = DeriveEpochSecret(joiner_secret_8) in
+    {192}let membership_secret_10: Secret = DeriveMembershipSecret(epoch_secret_10) in
+    {193}let mackey5: MACkey = GenMACkey(membership_secret_10) in
+    {194}let wskey_4: Skey = GenSkey(path_secret_w_7) in
+    {195}in(PublicCh, msg_2: Cipher);
+    {196}if (Dec(wskey_4,msg_2) = MESSAGE2) then
+    {197}event RECV(CharlieID)
+)
+
+--  Process 1 (that is, process 0, with let moved downwards):
+{1}new ASsignkey: Signkey;
+{3}new AliceSkey: Skey;
+{5}new AliceSignkey: Signkey;
+{7}new BobSkey: Skey;
+{9}new BobSignkey: Signkey;
+{11}new CharlieSkey: Skey;
+{13}new CharlieSignkey: Signkey;
+{2}let ASverifyKey: Verifykey = GenVerifyKey(ASsignkey) in
+{15}out(PublicCh, ASverifyKey);
+{6}let AliceVerifyKey: Verifykey = GenVerifyKey(AliceSignkey) in
+{4}let AlicePkey: Pkey = GenPkey(AliceSkey) in
+{16}out(PublicCh, (AlicePkey,AliceVerifyKey,GenSign(ASsignkey,KPGTBS(AlicePkey,AliceVerifyKey))));
+{10}let BobVerifyKey: Verifykey = GenVerifyKey(BobSignkey) in
+{8}let BobPkey: Pkey = GenPkey(BobSkey) in
+{17}out(PublicCh, (BobPkey,BobVerifyKey,GenSign(ASsignkey,KPGTBS(BobPkey,BobVerifyKey))));
+{14}let CharlieVerifyKey: Verifykey = GenVerifyKey(CharlieSignkey) in
+{12}let CharliePkey: Pkey = GenPkey(CharlieSkey) in
+{18}out(PublicCh, (CharliePkey,CharlieVerifyKey,GenSign(ASsignkey,KPGTBS(CharliePkey,CharlieVerifyKey))));
+(
+    {21}new epoch_secret_0: Secret;
+    {22}new path_secret_a: Secret;
+    {28}in(PublicCh, (BobkpgPkey: Pkey,BobkpgVerifyKey: Verifykey,BobkpgSign: Signature));
+    {29}let BobkpgTBS: bitstring = KPGTBS(BobkpgPkey,BobkpgVerifyKey) in
+    {30}if Verify(ASverifyKey,BobkpgSign,BobkpgTBS) then
+    {25}let path_secret_x: Secret = DeriveNextPathSecret(path_secret_a) in
+    {26}let commit_secret: Secret = DeriveNextPathSecret(path_secret_x) in
+    {27}let joiner_secret_0: Secret = DeriveJoinerSecret(epoch_secret_0,commit_secret) in
+    {19}let mysignkey: Signkey = AliceSignkey in
+    {31}out(BobCh, GenWelcomeMSG(BobkpgPkey,path_secret_x,joiner_secret_0,GenSign(mysignkey,WelcomeTBS(path_secret_x,joiner_secret_0))));
+    {32}let epoch_secret_1: Secret = DeriveEpochSecret(joiner_secret_0) in
+    {33}let membership_secret_1: Secret = DeriveMembershipSecret(epoch_secret_1) in
+    {34}let mackey1: MACkey = GenMACkey(membership_secret_1) in
+    {23}let myskey: Skey = GenSkey(path_secret_a) in
+    {24}let mypkey: Pkey = GenPkey(myskey) in
+    {35}out(PublicCh, (mypkey,GenMAC(mackey1,Alice_Pkey_S2,Pkey2bitstring(mypkey))));
+    {36}in(AliceCh, commitMSG: Cipher);
+    {39}let mac: MAC = GetMAC_fromCommit(myskey,commitMSG) in
+    {37}let path_secret_x_1: Secret = GetPathSecret_fromCommit(myskey,commitMSG) in
+    {40}if (mac = GenMAC(mackey1,Path_Secret_X_S3,Secret2bitstring(path_secret_x_1))) then
+    {45}in(PublicCh, (BobPkey_1: Pkey,mac_1: MAC));
+    {38}let commit_secret_1: Secret = DeriveNextPathSecret(path_secret_x_1) in
+    {41}let joiner_secret_1: Secret = DeriveJoinerSecret(epoch_secret_1,commit_secret_1) in
+    {42}let epoch_secret_2: Secret = DeriveEpochSecret(joiner_secret_1) in
+    {43}let membership_secret_2: Secret = DeriveMembershipSecret(epoch_secret_2) in
+    {44}let mackey2: MACkey = GenMACkey(membership_secret_2) in
+    {46}if (mac_1 = GenMAC(mackey2,Bob_Pkey_S3,Pkey2bitstring(BobPkey_1))) then
+    {47}in(PublicCh, (CharliekpgPkey: Pkey,CharlieVerifyKey_1: Verifykey,CharliekpgSign: Signature));
+    {48}let CharliekpgTBS: bitstring = KPGTBS(CharliekpgPkey,CharlieVerifyKey_1) in
+    {49}if Verify(ASverifyKey,CharliekpgSign,CharliekpgTBS) then
+    {50}new path_secret_a_1: Secret;
+    {53}let path_secret_x_2: Secret = DeriveNextPathSecret(path_secret_a_1) in
+    {54}let path_secret_w: Secret = DeriveNextPathSecret(path_secret_x_2) in
+    {55}let commit_secret_2: Secret = DeriveNextPathSecret(path_secret_w) in
+    {56}let joiner_secret_2: Secret = DeriveJoinerSecret(epoch_secret_2,commit_secret_2) in
+    {57}out(CharlieCh, GenWelcomeMSG(CharliekpgPkey,path_secret_w,joiner_secret_2,GenSign(mysignkey,WelcomeTBS(path_secret_w,joiner_secret_2))));
+    {61}out(BobCh, GenCommitMSG(BobPkey_1,path_secret_x_2,GenMAC(mackey2,Path_Secret_X_S4,Secret2bitstring(path_secret_x_2))));
+    {58}let epoch_secret_3: Secret = DeriveEpochSecret(joiner_secret_2) in
+    {59}let membership_secret_3: Secret = DeriveMembershipSecret(epoch_secret_3) in
+    {60}let mackey3: MACkey = GenMACkey(membership_secret_3) in
+    {51}let myskey_1: Skey = GenSkey(path_secret_a_1) in
+    {52}let mypkey_1: Pkey = GenPkey(myskey_1) in
+    {62}out(PublicCh, (mypkey_1,GenMAC(mackey3,Alice_Pkey_S4,Pkey2bitstring(mypkey_1))));
+    {63}let xskey: Skey = GenSkey(path_secret_x_2) in
+    {64}let xpkey: Pkey = GenPkey(xskey) in
+    {65}out(PublicCh, (xpkey,GenMAC(mackey3,X_Pkey_S4,Pkey2bitstring(xpkey))));
+    {66}in(AliceCh, commitMSG_1: Cipher);
+    {69}let mac_2: MAC = GetMAC_fromCommit(xskey,commitMSG_1) in
+    {67}let path_secret_w_1: Secret = GetPathSecret_fromCommit(xskey,commitMSG_1) in
+    {70}if (mac_2 = GenMAC(mackey3,Path_Secret_W_S5,Secret2bitstring(path_secret_w_1))) then
+    {75}in(PublicCh, (wpkey: Pkey,mac_3: MAC));
+    {68}let commit_secret_3: Secret = DeriveNextPathSecret(path_secret_w_1) in
+    {71}let joiner_secret_3: Secret = DeriveJoinerSecret(epoch_secret_3,commit_secret_3) in
+    {72}let epoch_secret_4: Secret = DeriveEpochSecret(joiner_secret_3) in
+    {73}let membership_secret_4: Secret = DeriveMembershipSecret(epoch_secret_4) in
+    {74}let mackey4: MACkey = GenMACkey(membership_secret_4) in
+    {76}if (mac_3 = GenMAC(mackey4,W_Pkey_S5,Pkey2bitstring(wpkey))) then
+    {78}in(PublicCh, msg: Cipher);
+    {77}let wskey: Skey = GenSkey(path_secret_w_1) in
+    {79}if (Dec(wskey,msg) = MESSAGE) then
+    {80}event RECV(AliceID);
+    {81}in(AliceCh, revoke_mac: MAC);
+    {82}if (revoke_mac = GenMAC(mackey4,Alice_Revoke_P8,Alice_Revoke_P8)) then
+    {83}phase 1;
+    {84}out(PublicCh, (epoch_secret_4,path_secret_a_1,path_secret_x_2,path_secret_w_1))
+) | (
+    {87}in(PublicCh, (AlicePkey_1: Pkey,AliceVerifyKey_1: Verifykey,AliceSign: Signature));
+    {88}let AlicekpgTBS: bitstring = KPGTBS(AlicePkey_1,AliceVerifyKey_1) in
+    {89}if Verify(ASverifyKey,AliceSign,AlicekpgTBS) then
+    {90}in(BobCh, welcomeMSG: Cipher);
+    {86}let mykpgSkey_1: Skey = BobSkey in
+    {94}let signature: Signature = GetSignature_fromWelcome(mykpgSkey_1,welcomeMSG) in
+    {92}let joiner_secret_0_1: Secret = GetJoinerSecret_fromWelcome(mykpgSkey_1,welcomeMSG) in
+    {91}let path_secret_x_3: Secret = GetPathSecret_fromWelcome(mykpgSkey_1,welcomeMSG) in
+    {95}if Verify(AliceVerifyKey_1,signature,WelcomeTBS(path_secret_x_3,joiner_secret_0_1)) then
+    {98}in(PublicCh, (AlicePkey_2: Pkey,mac_4: MAC));
+    {93}let epoch_secret: Secret = DeriveEpochSecret(joiner_secret_0_1) in
+    {96}let membership_secret: Secret = DeriveMembershipSecret(epoch_secret) in
+    {97}let mackey1_1: MACkey = GenMACkey(membership_secret) in
+    {99}if (mac_4 = GenMAC(mackey1_1,Alice_Pkey_S2,Pkey2bitstring(AlicePkey_2))) then
+    {100}new path_secret_b: Secret;
+    {103}let path_secret_x_4: Secret = DeriveNextPathSecret(path_secret_b) in
+    {105}out(AliceCh, GenCommitMSG(AlicePkey_2,path_secret_x_4,GenMAC(mackey1_1,Path_Secret_X_S3,Secret2bitstring(path_secret_x_4))));
+    {104}let commit_secret_4: Secret = DeriveNextPathSecret(path_secret_x_4) in
+    {106}let joiner_secret: Secret = DeriveJoinerSecret(epoch_secret,commit_secret_4) in
+    {107}let epoch_secret_5: Secret = DeriveEpochSecret(joiner_secret) in
+    {108}let membership_secret_5: Secret = DeriveMembershipSecret(epoch_secret_5) in
+    {109}let mackey2_1: MACkey = GenMACkey(membership_secret_5) in
+    {101}let myskey_2: Skey = GenSkey(path_secret_b) in
+    {102}let mypkey_2: Pkey = GenPkey(myskey_2) in
+    {110}out(PublicCh, (mypkey_2,GenMAC(mackey2_1,Bob_Pkey_S3,Pkey2bitstring(mypkey_2))));
+    {111}in(BobCh, commitMSG_2: Cipher);
+    {115}let mac_5: MAC = GetMAC_fromCommit(myskey_2,commitMSG_2) in
+    {112}let path_secret_x_5: Secret = GetPathSecret_fromCommit(myskey_2,commitMSG_2) in
+    {116}if (mac_5 = GenMAC(mackey2_1,Path_Secret_X_S4,Secret2bitstring(path_secret_x_5))) then
+    {122}in(BobCh, commitMSG_3: Cipher);
+    {121}let xskey_1: Skey = GenSkey(path_secret_x_5) in
+    {125}let mac_6: MAC = GetMAC_fromCommit(xskey_1,commitMSG_3) in
+    {123}let path_secret_w_3: Secret = GetPathSecret_fromCommit(xskey_1,commitMSG_3) in
+    {113}let path_secret_w_2: Secret = DeriveNextPathSecret(path_secret_x_5) in
+    {114}let commit_secret_5: Secret = DeriveNextPathSecret(path_secret_w_2) in
+    {117}let joiner_secret_4: Secret = DeriveJoinerSecret(epoch_secret_5,commit_secret_5) in
+    {118}let epoch_secret_6: Secret = DeriveEpochSecret(joiner_secret_4) in
+    {119}let membership_secret_6: Secret = DeriveMembershipSecret(epoch_secret_6) in
+    {120}let mackey3_1: MACkey = GenMACkey(membership_secret_6) in
+    {126}if (mac_6 = GenMAC(mackey3_1,Path_Secret_W_S5,Secret2bitstring(path_secret_w_3))) then
+    {131}in(PublicCh, (wpkey_1: Pkey,mac_7: MAC));
+    {124}let commit_secret_6: Secret = DeriveNextPathSecret(path_secret_w_3) in
+    {127}let joiner_secret_5: Secret = DeriveJoinerSecret(epoch_secret_6,commit_secret_6) in
+    {128}let epoch_secret_7: Secret = DeriveEpochSecret(joiner_secret_5) in
+    {129}let membership_secret_7: Secret = DeriveMembershipSecret(epoch_secret_7) in
+    {130}let mackey4_1: MACkey = GenMACkey(membership_secret_7) in
+    {132}if (mac_7 = GenMAC(mackey4_1,W_Pkey_S5,Pkey2bitstring(wpkey_1))) then
+    {134}in(PublicCh, msg_1: Cipher);
+    {133}let wskey_1: Skey = GenSkey(path_secret_w_3) in
+    {135}if (Dec(wskey_1,msg_1) = MESSAGE) then
+    {136}event RECV(BobID);
+    {137}new path_secret_b_1: Secret;
+    {142}in(PublicCh, (CharliePkey_1: Pkey,mac_8: MAC));
+    {143}if (mac_8 = GenMAC(mackey4_1,Charlie_Pkey_S5,Pkey2bitstring(CharliePkey_1))) then
+    {140}let path_secret_w_4: Secret = DeriveNextPathSecret(path_secret_b_1) in
+    {144}out(CharlieCh, GenCommitMSG(CharliePkey_1,path_secret_w_4,GenMAC(mackey4_1,Path_Secret_W_P7,Secret2bitstring(path_secret_w_4))));
+    {145}phase 1;
+    {138}let myskey_3: Skey = GenSkey(path_secret_b_1) in
+    {139}let mypkey_3: Pkey = GenPkey(myskey_3) in
+    {146}out(PublicCh, (mypkey_3,GenMAC(mackey4_1,Bob_Pkey_P7,Pkey2bitstring(mypkey_3))));
+    {147}let wskey_2: Skey = GenSkey(path_secret_w_4) in
+    {148}let wpkey_2: Pkey = GenPkey(wskey_2) in
+    {149}out(PublicCh, (wpkey_2,GenMAC(mackey4_1,W_Pkey_P7,Pkey2bitstring(wpkey_2))));
+    {150}event SEND(BobID);
+    {151}out(PublicCh, Enc(wpkey_2,MESSAGE2))
+) | (
+    {154}in(PublicCh, (AlicePkey_3: Pkey,AliceVerifyKey_2: Verifykey,AliceSign_1: Signature));
+    {155}let AlicekpgTBS_1: bitstring = KPGTBS(AlicePkey_3,AliceVerifyKey_2) in
+    {156}if Verify(ASverifyKey,AliceSign_1,AlicekpgTBS_1) then
+    {157}in(CharlieCh, welcomeMSG_1: Cipher);
+    {153}let mykpgSkey_2: Skey = CharlieSkey in
+    {160}let signature_1: Signature = GetSignature_fromWelcome(mykpgSkey_2,welcomeMSG_1) in
+    {159}let joiner_secret_6: Secret = GetJoinerSecret_fromWelcome(mykpgSkey_2,welcomeMSG_1) in
+    {158}let path_secret_w_5: Secret = GetPathSecret_fromWelcome(mykpgSkey_2,welcomeMSG_1) in
+    {161}if Verify(AliceVerifyKey_2,signature_1,WelcomeTBS(path_secret_w_5,joiner_secret_6)) then
+    {165}in(PublicCh, (xpkey_1: Pkey,mac_9: MAC));
+    {162}let epoch_secret_8: Secret = DeriveEpochSecret(joiner_secret_6) in
+    {163}let membership_secret_8: Secret = DeriveMembershipSecret(epoch_secret_8) in
+    {164}let mackey3_2: MACkey = GenMACkey(membership_secret_8) in
+    {166}if (mac_9 = GenMAC(mackey3_2,X_Pkey_S4,Pkey2bitstring(xpkey_1))) then
+    {167}new path_secret_c: Secret;
+    {170}let path_secret_w_6: Secret = DeriveNextPathSecret(path_secret_c) in
+    {174}out(AliceCh, GenCommitMSG(xpkey_1,path_secret_w_6,GenMAC(mackey3_2,Path_Secret_W_S5,Secret2bitstring(path_secret_w_6))));
+    {175}out(BobCh, GenCommitMSG(xpkey_1,path_secret_w_6,GenMAC(mackey3_2,Path_Secret_W_S5,Secret2bitstring(path_secret_w_6))));
+    {173}let commit_secret_8: Secret = DeriveNextPathSecret(path_secret_w_6) in
+    {176}let joiner_secret_7: Secret = DeriveJoinerSecret(epoch_secret_8,commit_secret_8) in
+    {177}let epoch_secret_9: Secret = DeriveEpochSecret(joiner_secret_7) in
+    {178}let membership_secret_9: Secret = DeriveMembershipSecret(epoch_secret_9) in
+    {179}let mackey4_2: MACkey = GenMACkey(membership_secret_9) in
+    {168}let myskey_4: Skey = GenSkey(path_secret_c) in
+    {169}let mypkey_4: Pkey = GenPkey(myskey_4) in
+    {180}out(PublicCh, (mypkey_4,GenMAC(mackey4_2,Charlie_Pkey_S5,Pkey2bitstring(mypkey_4))));
+    {171}let wskey_3: Skey = GenSkey(path_secret_w_6) in
+    {172}let wpkey_3: Pkey = GenPkey(wskey_3) in
+    {181}out(PublicCh, (wpkey_3,GenMAC(mackey4_2,W_Pkey_S5,Pkey2bitstring(wpkey_3))));
+    {182}out(PublicCh, Enc(wpkey_3,MESSAGE));
+    {183}in(CharlieCh, commitMSG_4: Cipher);
+    {186}let mac_10: MAC = GetMAC_fromCommit(myskey_4,commitMSG_4) in
+    {184}let path_secret_w_7: Secret = GetPathSecret_fromCommit(myskey_4,commitMSG_4) in
+    {187}if (mac_10 = GenMAC(mackey4_2,Path_Secret_W_P7,Secret2bitstring(path_secret_w_7))) then
+    {188}out(AliceCh, (Alice_Revoke_P8,GenMAC(mackey4_2,Alice_Revoke_P8,Alice_Revoke_P8)));
+    {189}phase 1;
+    {195}in(PublicCh, msg_2: Cipher);
+    {194}let wskey_4: Skey = GenSkey(path_secret_w_7) in
+    {196}if (Dec(wskey_4,msg_2) = MESSAGE2) then
+    {197}event RECV(CharlieID)
+)
+
+-- Query not attacker_p1(MESSAGE2) in process 1.
+Translating the process into Horn clauses...
+Completing...
+200 rules inserted. Base: 191 rules (117 with conclusion selected). Queue: 34 rules.
+400 rules inserted. Base: 382 rules (122 with conclusion selected). Queue: 75 rules.
+600 rules inserted. Base: 501 rules (122 with conclusion selected). Queue: 69 rules.
+800 rules inserted. Base: 547 rules (125 with conclusion selected). Queue: 97 rules.
+1000 rules inserted. Base: 655 rules (125 with conclusion selected). Queue: 92 rules.
+1200 rules inserted. Base: 751 rules (125 with conclusion selected). Queue: 142 rules.
+1400 rules inserted. Base: 816 rules (125 with conclusion selected). Queue: 199 rules.
+1600 rules inserted. Base: 901 rules (143 with conclusion selected). Queue: 226 rules.
+1800 rules inserted. Base: 998 rules (143 with conclusion selected). Queue: 222 rules.
+2000 rules inserted. Base: 1151 rules (173 with conclusion selected). Queue: 285 rules.
+2200 rules inserted. Base: 1255 rules (179 with conclusion selected). Queue: 327 rules.
+2400 rules inserted. Base: 1401 rules (179 with conclusion selected). Queue: 311 rules.
+2600 rules inserted. Base: 1559 rules (179 with conclusion selected). Queue: 277 rules.
+2800 rules inserted. Base: 1676 rules (179 with conclusion selected). Queue: 231 rules.
+3000 rules inserted. Base: 1794 rules (185 with conclusion selected). Queue: 251 rules.
+3200 rules inserted. Base: 1978 rules (185 with conclusion selected). Queue: 216 rules.
+3400 rules inserted. Base: 2107 rules (185 with conclusion selected). Queue: 218 rules.
+3600 rules inserted. Base: 2274 rules (197 with conclusion selected). Queue: 294 rules.
+3800 rules inserted. Base: 2396 rules (197 with conclusion selected). Queue: 287 rules.
+4000 rules inserted. Base: 2538 rules (197 with conclusion selected). Queue: 284 rules.
+4200 rules inserted. Base: 2647 rules (197 with conclusion selected). Queue: 267 rules.
+4400 rules inserted. Base: 2742 rules (197 with conclusion selected). Queue: 199 rules.
+4600 rules inserted. Base: 2874 rules (197 with conclusion selected). Queue: 189 rules.
+4800 rules inserted. Base: 2877 rules (197 with conclusion selected). Queue: 159 rules.
+5000 rules inserted. Base: 3010 rules (197 with conclusion selected). Queue: 141 rules.
+5200 rules inserted. Base: 3054 rules (197 with conclusion selected). Queue: 111 rules.
+5400 rules inserted. Base: 3190 rules (203 with conclusion selected). Queue: 72 rules.
+5600 rules inserted. Base: 3270 rules (218 with conclusion selected). Queue: 12 rules.
+Starting query not attacker_p1(MESSAGE2)
+RESULT not attacker_p1(MESSAGE2) is true.
+-- Query not event(RECV(CharlieID)) in process 1.
+Translating the process into Horn clauses...
+Completing...
+200 rules inserted. Base: 192 rules (117 with conclusion selected). Queue: 38 rules.
+400 rules inserted. Base: 382 rules (122 with conclusion selected). Queue: 79 rules.
+600 rules inserted. Base: 519 rules (122 with conclusion selected). Queue: 72 rules.
+800 rules inserted. Base: 553 rules (125 with conclusion selected). Queue: 100 rules.
+1000 rules inserted. Base: 662 rules (125 with conclusion selected). Queue: 78 rules.
+1200 rules inserted. Base: 783 rules (125 with conclusion selected). Queue: 144 rules.
+1400 rules inserted. Base: 834 rules (125 with conclusion selected). Queue: 204 rules.
+1600 rules inserted. Base: 927 rules (141 with conclusion selected). Queue: 227 rules.
+1800 rules inserted. Base: 998 rules (143 with conclusion selected). Queue: 238 rules.
+2000 rules inserted. Base: 1143 rules (160 with conclusion selected). Queue: 264 rules.
+2200 rules inserted. Base: 1259 rules (179 with conclusion selected). Queue: 346 rules.
+2400 rules inserted. Base: 1447 rules (179 with conclusion selected). Queue: 344 rules.
+2600 rules inserted. Base: 1551 rules (179 with conclusion selected). Queue: 319 rules.
+2800 rules inserted. Base: 1728 rules (179 with conclusion selected). Queue: 244 rules.
+3000 rules inserted. Base: 1847 rules (179 with conclusion selected). Queue: 229 rules.
+3200 rules inserted. Base: 1975 rules (185 with conclusion selected). Queue: 267 rules.
+3400 rules inserted. Base: 2112 rules (185 with conclusion selected). Queue: 232 rules.
+3600 rules inserted. Base: 2259 rules (190 with conclusion selected). Queue: 264 rules.
+3800 rules inserted. Base: 2362 rules (197 with conclusion selected). Queue: 289 rules.
+4000 rules inserted. Base: 2501 rules (197 with conclusion selected). Queue: 285 rules.
+4200 rules inserted. Base: 2640 rules (197 with conclusion selected). Queue: 288 rules.
+4400 rules inserted. Base: 2727 rules (197 with conclusion selected). Queue: 257 rules.
+4600 rules inserted. Base: 2843 rules (197 with conclusion selected). Queue: 201 rules.
+4800 rules inserted. Base: 2907 rules (197 with conclusion selected). Queue: 191 rules.
+5000 rules inserted. Base: 2954 rules (197 with conclusion selected). Queue: 159 rules.
+5200 rules inserted. Base: 3026 rules (197 with conclusion selected). Queue: 143 rules.
+5400 rules inserted. Base: 3104 rules (199 with conclusion selected). Queue: 111 rules.
+5600 rules inserted. Base: 3240 rules (205 with conclusion selected). Queue: 73 rules.
+5800 rules inserted. Base: 3257 rules (221 with conclusion selected). Queue: 12 rules.
+Starting query not event(RECV(CharlieID))
+goal reachable: event(RECV(CharlieID))
+
+Derivation:
+Abbreviations:
+path_secret_b_2 = path_secret_b[mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+path_secret_a_2 = path_secret_a_1[CharliekpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))),CharlieVerifyKey_1 = GenVerifyKey(CharlieSignkey[]),CharliekpgPkey = GenPkey(CharlieSkey[]),mac_1 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))),BobPkey_1 = GenPkey(GenSkey(path_secret_b_2)),commitMSG = GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))),BobkpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))),BobkpgVerifyKey = GenVerifyKey(CharlieSignkey[]),BobkpgPkey = GenPkey(CharlieSkey[])]
+path_secret_c_1 = path_secret_c[mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+path_secret_b_3 = path_secret_b_1[msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+
+1. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) may be sent to the attacker at output {16}.
+attacker((GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))))).
+
+2. By 1, the attacker may know (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))).
+Using the function 3-proj-3-tuple the attacker may obtain GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))).
+attacker(GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))).
+
+3. By 1, the attacker may know (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))).
+Using the function 2-proj-3-tuple the attacker may obtain GenVerifyKey(AliceSignkey[]).
+attacker(GenVerifyKey(AliceSignkey[])).
+
+4. By 1, the attacker may know (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))).
+Using the function 1-proj-3-tuple the attacker may obtain GenPkey(AliceSkey[]).
+attacker(GenPkey(AliceSkey[])).
+
+5. By 4, the attacker may know GenPkey(AliceSkey[]).
+By 3, the attacker may know GenVerifyKey(AliceSignkey[]).
+By 2, the attacker may know GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))).
+Using the function 3-tuple the attacker may obtain (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))).
+attacker((GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))))).
+
+6. The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) may be sent to the attacker at output {18}.
+attacker((GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))))).
+
+7. By 6, the attacker may know (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))).
+Using the function 3-proj-3-tuple the attacker may obtain GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))).
+attacker(GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))).
+
+8. By 6, the attacker may know (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))).
+Using the function 2-proj-3-tuple the attacker may obtain GenVerifyKey(CharlieSignkey[]).
+attacker(GenVerifyKey(CharlieSignkey[])).
+
+9. By 6, the attacker may know (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))).
+Using the function 1-proj-3-tuple the attacker may obtain GenPkey(CharlieSkey[]).
+attacker(GenPkey(CharlieSkey[])).
+
+10. By 9, the attacker may know GenPkey(CharlieSkey[]).
+By 8, the attacker may know GenVerifyKey(CharlieSignkey[]).
+By 7, the attacker may know GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))).
+Using the function 3-tuple the attacker may obtain (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))).
+attacker((GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))))).
+
+11. The message (GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))) may be sent to the attacker at output {17}.
+attacker((GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]))))).
+
+12. By 11, the attacker may know (GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))).
+Using the function 3-proj-3-tuple the attacker may obtain GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]))).
+attacker(GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))).
+
+13. By 11, the attacker may know (GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))).
+Using the function 2-proj-3-tuple the attacker may obtain GenVerifyKey(BobSignkey[]).
+attacker(GenVerifyKey(BobSignkey[])).
+
+14. By 11, the attacker may know (GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))).
+Using the function 1-proj-3-tuple the attacker may obtain GenPkey(BobSkey[]).
+attacker(GenPkey(BobSkey[])).
+
+15. By 14, the attacker may know GenPkey(BobSkey[]).
+By 13, the attacker may know GenVerifyKey(BobSignkey[]).
+By 12, the attacker may know GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]))).
+Using the function 3-tuple the attacker may obtain (GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))).
+attacker((GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]))))).
+
+16. The message (GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[])))) that the attacker may have by 15 may be received at input {28}.
+So the message GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))) may be sent to the attacker at output {31}.
+attacker(GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))))))).
+
+17. The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {28}.
+So the message (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))) may be sent to the attacker at output {35}.
+attacker((GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))))).
+
+18. By 17, the attacker may know (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))).
+Using the function 2-proj-2-tuple the attacker may obtain GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))).
+attacker(GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))).
+
+19. By 17, the attacker may know (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))).
+Using the function 1-proj-2-tuple the attacker may obtain GenPkey(GenSkey(path_secret_a[])).
+attacker(GenPkey(GenSkey(path_secret_a[]))).
+
+20. By 19, the attacker may know GenPkey(GenSkey(path_secret_a[])).
+By 18, the attacker may know GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))).
+Using the function 2-tuple the attacker may obtain (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))).
+attacker((GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))))).
+
+21. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {87}.
+The message GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))) that the attacker may have by 16 may be received at input {90}.
+The message (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))) that the attacker may have by 20 may be received at input {98}.
+So the message GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))) may be sent to the attacker at output {105}.
+attacker(GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2))))).
+
+22. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {87}.
+The message GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))) that the attacker may have by 16 may be received at input {90}.
+The message (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))) that the attacker may have by 20 may be received at input {98}.
+So the message (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))) may be sent to the attacker at output {110}.
+attacker((GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))))).
+
+23. By 22, the attacker may know (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))).
+Using the function 2-proj-2-tuple the attacker may obtain GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))).
+attacker(GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))).
+
+24. By 22, the attacker may know (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))).
+Using the function 1-proj-2-tuple the attacker may obtain GenPkey(GenSkey(path_secret_b_2)).
+attacker(GenPkey(GenSkey(path_secret_b_2))).
+
+25. By 24, the attacker may know GenPkey(GenSkey(path_secret_b_2)).
+By 23, the attacker may know GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))).
+Using the function 2-tuple the attacker may obtain (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))).
+attacker((GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))))).
+
+26. The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {28}.
+The message GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))) that the attacker may have by 21 may be received at input {36}.
+The message (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))) that the attacker may have by 25 may be received at input {45}.
+The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {47}.
+So the message GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))) may be sent to the attacker at output {57}.
+attacker(GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))))))).
+
+27. The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {28}.
+The message GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))) that the attacker may have by 21 may be received at input {36}.
+The message (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))) that the attacker may have by 25 may be received at input {45}.
+The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {47}.
+So the message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))) may be sent to the attacker at output {65}.
+attacker((GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))))).
+
+28. By 27, the attacker may know (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))).
+Using the function 2-proj-2-tuple the attacker may obtain GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))).
+attacker(GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))).
+
+29. By 27, the attacker may know (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))).
+Using the function 1-proj-2-tuple the attacker may obtain GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))).
+attacker(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))).
+
+30. By 29, the attacker may know GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))).
+By 28, the attacker may know GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))).
+Using the function 2-tuple the attacker may obtain (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))).
+attacker((GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))))).
+
+31. The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {28}.
+The message GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))) that the attacker may have by 21 may be received at input {36}.
+The message (GenPkey(GenSkey(path_secret_b_2)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2))))) that the attacker may have by 25 may be received at input {45}.
+The message (GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[])))) that the attacker may have by 10 may be received at input {47}.
+So the message GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))) may be sent to the attacker at output {61}.
+attacker(GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2))))).
+
+32. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {154}.
+The message GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))) that the attacker may have by 26 may be received at input {157}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))) that the attacker may have by 30 may be received at input {165}.
+So the message GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))) may be sent to the attacker at output {174}.
+attacker(GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1))))).
+
+33. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {154}.
+The message GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))) that the attacker may have by 26 may be received at input {157}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))) that the attacker may have by 30 may be received at input {165}.
+So the message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))) may be sent to the attacker at output {181}.
+attacker((GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))))).
+
+34. By 33, the attacker may know (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))).
+Using the function 2-proj-2-tuple the attacker may obtain GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))).
+attacker(GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))).
+
+35. By 33, the attacker may know (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))).
+Using the function 1-proj-2-tuple the attacker may obtain GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))).
+attacker(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))).
+
+36. By 35, the attacker may know GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))).
+By 34, the attacker may know GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))).
+Using the function 2-tuple the attacker may obtain (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))).
+attacker((GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))))).
+
+37. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {154}.
+The message GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))) that the attacker may have by 26 may be received at input {157}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))) that the attacker may have by 30 may be received at input {165}.
+So the message Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE) may be sent to the attacker at output {182}.
+attacker(Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE)).
+
+38. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {154}.
+The message GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))) that the attacker may have by 26 may be received at input {157}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))) that the attacker may have by 30 may be received at input {165}.
+So the message (GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))) may be sent to the attacker at output {180}.
+attacker((GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))))).
+
+39. By 38, the attacker may know (GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))).
+Using the function 2-proj-2-tuple the attacker may obtain GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))).
+attacker(GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))).
+
+40. By 38, the attacker may know (GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))).
+Using the function 1-proj-2-tuple the attacker may obtain GenPkey(GenSkey(path_secret_c_1)).
+attacker(GenPkey(GenSkey(path_secret_c_1))).
+
+41. By 40, the attacker may know GenPkey(GenSkey(path_secret_c_1)).
+By 39, the attacker may know GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))).
+Using the function 2-tuple the attacker may obtain (GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))).
+attacker((GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))))).
+
+42. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {87}.
+The message GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))) that the attacker may have by 16 may be received at input {90}.
+The message (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))) that the attacker may have by 20 may be received at input {98}.
+The message GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))) that the attacker may have by 31 may be received at input {111}.
+The message GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))) that the attacker may have by 32 may be received at input {122}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))) that the attacker may have by 36 may be received at input {131}.
+The message Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE) that the attacker may have by 37 may be received at input {134}.
+The message (GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))) that the attacker may have by 41 may be received at input {142}.
+So the message GenCommitMSG(GenPkey(GenSkey(path_secret_c_1)),DeriveNextPathSecret(path_secret_b_3),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Path_Secret_W_P7,Secret2bitstring(DeriveNextPathSecret(path_secret_b_3)))) may be sent to the attacker at output {144}.
+attacker(GenCommitMSG(GenPkey(GenSkey(path_secret_c_1)),DeriveNextPathSecret(path_secret_b_3),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Path_Secret_W_P7,Secret2bitstring(DeriveNextPathSecret(path_secret_b_3))))).
+
+43. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {87}.
+The message GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))) that the attacker may have by 16 may be received at input {90}.
+The message (GenPkey(GenSkey(path_secret_a[])),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[]))))) that the attacker may have by 20 may be received at input {98}.
+The message GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))) that the attacker may have by 31 may be received at input {111}.
+The message GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))) that the attacker may have by 32 may be received at input {122}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1)))))) that the attacker may have by 36 may be received at input {131}.
+The message Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE) that the attacker may have by 37 may be received at input {134}.
+The message (GenPkey(GenSkey(path_secret_c_1)),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1))))) that the attacker may have by 41 may be received at input {142}.
+So the message Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_b_3))),MESSAGE2) may be sent to the attacker in phase 1 at output {151}.
+attacker_p1(Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_b_3))),MESSAGE2)).
+
+44. The message (GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[])))) that the attacker may have by 5 may be received at input {154}.
+The message GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))) that the attacker may have by 26 may be received at input {157}.
+The message (GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2)))))) that the attacker may have by 30 may be received at input {165}.
+The message GenCommitMSG(GenPkey(GenSkey(path_secret_c_1)),DeriveNextPathSecret(path_secret_b_3),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Path_Secret_W_P7,Secret2bitstring(DeriveNextPathSecret(path_secret_b_3)))) that the attacker may have by 42 may be received at input {183}.
+The message Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_b_3))),MESSAGE2) that the attacker may have in phase 1 by 43 may be received at input {195}.
+So event RECV(CharlieID) may be executed at {197}.
+event(RECV(CharlieID)).
+
+45. By 44, event(RECV(CharlieID)).
+The goal is reached, represented in the following fact:
+event(RECV(CharlieID)).
+
+
+Unification of attacker((GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]))))) and attacker((GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]),GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))))) failed or made a constraint become false at the input at occurrence {28}
+Try adding a [precise] option on it.
+Trying with the initial derivation tree instead.
+Could not find a trace corresponding to this derivation.
+RESULT not event(RECV(CharlieID)) cannot be proved.
+-- Query inj-event(RECV(CharlieID)) ==> inj-event(SEND(BobID)) in process 1.
+Translating the process into Horn clauses...
+Completing...
+200 rules inserted. Base: 192 rules (117 with conclusion selected). Queue: 38 rules.
+400 rules inserted. Base: 382 rules (122 with conclusion selected). Queue: 79 rules.
+600 rules inserted. Base: 519 rules (122 with conclusion selected). Queue: 72 rules.
+800 rules inserted. Base: 553 rules (125 with conclusion selected). Queue: 100 rules.
+1000 rules inserted. Base: 662 rules (125 with conclusion selected). Queue: 78 rules.
+1200 rules inserted. Base: 783 rules (125 with conclusion selected). Queue: 144 rules.
+1400 rules inserted. Base: 834 rules (125 with conclusion selected). Queue: 204 rules.
+1600 rules inserted. Base: 927 rules (141 with conclusion selected). Queue: 227 rules.
+1800 rules inserted. Base: 998 rules (143 with conclusion selected). Queue: 238 rules.
+2000 rules inserted. Base: 1143 rules (160 with conclusion selected). Queue: 264 rules.
+2200 rules inserted. Base: 1259 rules (179 with conclusion selected). Queue: 346 rules.
+2400 rules inserted. Base: 1447 rules (179 with conclusion selected). Queue: 344 rules.
+2600 rules inserted. Base: 1551 rules (179 with conclusion selected). Queue: 319 rules.
+2800 rules inserted. Base: 1728 rules (179 with conclusion selected). Queue: 244 rules.
+3000 rules inserted. Base: 1847 rules (179 with conclusion selected). Queue: 229 rules.
+3200 rules inserted. Base: 1975 rules (185 with conclusion selected). Queue: 267 rules.
+3400 rules inserted. Base: 2112 rules (185 with conclusion selected). Queue: 232 rules.
+3600 rules inserted. Base: 2259 rules (190 with conclusion selected). Queue: 264 rules.
+3800 rules inserted. Base: 2427 rules (197 with conclusion selected). Queue: 308 rules.
+4000 rules inserted. Base: 2571 rules (197 with conclusion selected). Queue: 304 rules.
+4200 rules inserted. Base: 2704 rules (197 with conclusion selected). Queue: 307 rules.
+4400 rules inserted. Base: 2810 rules (197 with conclusion selected). Queue: 288 rules.
+4600 rules inserted. Base: 2903 rules (197 with conclusion selected). Queue: 224 rules.
+4800 rules inserted. Base: 3029 rules (197 with conclusion selected). Queue: 217 rules.
+5000 rules inserted. Base: 3052 rules (197 with conclusion selected). Queue: 198 rules.
+5200 rules inserted. Base: 3145 rules (197 with conclusion selected). Queue: 176 rules.
+5400 rules inserted. Base: 3231 rules (197 with conclusion selected). Queue: 169 rules.
+5600 rules inserted. Base: 3335 rules (199 with conclusion selected). Queue: 135 rules.
+5800 rules inserted. Base: 3461 rules (207 with conclusion selected). Queue: 82 rules.
+6000 rules inserted. Base: 3616 rules (221 with conclusion selected). Queue: 17 rules.
+6200 rules inserted. Base: 3436 rules (235 with conclusion selected). Queue: 5 rules.
+Starting query inj-event(RECV(CharlieID)) ==> inj-event(SEND(BobID))
+goal reachable: b-inj-event(SEND(BobID),@occ150_1) -> inj-event(RECV(CharlieID),@occ197_1)
+The hypothesis occurs strictly before the conclusion.
+Abbreviations:
+path_secret_b_2 = path_secret_b[mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+path_secret_a_2 = path_secret_a_1[CharliekpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))),CharlieVerifyKey_1 = GenVerifyKey(CharlieSignkey[]),CharliekpgPkey = GenPkey(CharlieSkey[]),mac_1 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))),BobPkey_1 = GenPkey(GenSkey(path_secret_b_2)),commitMSG = GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))),BobkpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))),BobkpgVerifyKey = GenVerifyKey(CharlieSignkey[]),BobkpgPkey = GenPkey(CharlieSkey[])]
+path_secret_c_1 = path_secret_c[mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+path_secret_b_3 = path_secret_b_1[msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+@occ197_1 = @occ197[msg_2 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_b_3))),MESSAGE2),commitMSG_4 = GenCommitMSG(GenPkey(GenSkey(path_secret_c_1)),DeriveNextPathSecret(path_secret_b_3),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Path_Secret_W_P7,Secret2bitstring(DeriveNextPathSecret(path_secret_b_3)))),mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+@occ150_1 = @occ150[mac_8 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))),CharliePkey_1 = GenPkey(GenSkey(path_secret_c_1)),msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+goal reachable: b-inj-event(SEND(BobID),@occ150_1) -> inj-event(RECV(CharlieID),@occ197_1)
+The hypothesis occurs strictly before the conclusion.
+Abbreviations:
+path_secret_b_2 = path_secret_b[mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+path_secret_a_2 = path_secret_a_1[CharliekpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))),CharlieVerifyKey_1 = GenVerifyKey(CharlieSignkey[]),CharliekpgPkey = GenPkey(CharlieSkey[]),mac_1 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))),BobPkey_1 = GenPkey(GenSkey(path_secret_b_2)),commitMSG = GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))),BobkpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(BobSkey[]),GenVerifyKey(BobSignkey[]))),BobkpgVerifyKey = GenVerifyKey(BobSignkey[]),BobkpgPkey = GenPkey(BobSkey[])]
+path_secret_c_1 = path_secret_c[mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+path_secret_b_3 = path_secret_b_1[msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+@occ197_1 = @occ197[msg_2 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_b_3))),MESSAGE2),commitMSG_4 = GenCommitMSG(GenPkey(GenSkey(path_secret_c_1)),DeriveNextPathSecret(path_secret_b_3),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Path_Secret_W_P7,Secret2bitstring(DeriveNextPathSecret(path_secret_b_3)))),mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+@occ150_1 = @occ150[mac_8 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))),CharliePkey_1 = GenPkey(GenSkey(path_secret_c_1)),msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+goal reachable: b-inj-event(SEND(BobID),@occ150_1) -> inj-event(RECV(CharlieID),@occ197_1)
+The hypothesis occurs strictly before the conclusion.
+Abbreviations:
+path_secret_b_2 = path_secret_b[mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+path_secret_a_2 = path_secret_a_1[CharliekpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(CharlieSkey[]),GenVerifyKey(CharlieSignkey[]))),CharlieVerifyKey_1 = GenVerifyKey(CharlieSignkey[]),CharliekpgPkey = GenPkey(CharlieSkey[]),mac_1 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Bob_Pkey_S3,Pkey2bitstring(GenPkey(GenSkey(path_secret_b_2)))),BobPkey_1 = GenPkey(GenSkey(path_secret_b_2)),commitMSG = GenCommitMSG(GenPkey(GenSkey(path_secret_a[])),DeriveNextPathSecret(path_secret_b_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Path_Secret_X_S3,Secret2bitstring(DeriveNextPathSecret(path_secret_b_2)))),BobkpgSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),BobkpgVerifyKey = GenVerifyKey(AliceSignkey[]),BobkpgPkey = GenPkey(AliceSkey[])]
+path_secret_c_1 = path_secret_c[mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+path_secret_b_3 = path_secret_b_1[msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+@occ197_1 = @occ197[msg_2 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_b_3))),MESSAGE2),commitMSG_4 = GenCommitMSG(GenPkey(GenSkey(path_secret_c_1)),DeriveNextPathSecret(path_secret_b_3),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Path_Secret_W_P7,Secret2bitstring(DeriveNextPathSecret(path_secret_b_3)))),mac_9 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),X_Pkey_S4,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))))),xpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),welcomeMSG_1 = GenWelcomeMSG(GenPkey(CharlieSkey[]),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2)),DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),AliceSign_1 = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_2 = GenVerifyKey(AliceSignkey[]),AlicePkey_3 = GenPkey(AliceSkey[])]
+@occ150_1 = @occ150[mac_8 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),Charlie_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(path_secret_c_1)))),CharliePkey_1 = GenPkey(GenSkey(path_secret_c_1)),msg_1 = Enc(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),MESSAGE),mac_7 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_c_1)))))),W_Pkey_S5,Pkey2bitstring(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))))),wpkey_1 = GenPkey(GenSkey(DeriveNextPathSecret(path_secret_c_1))),commitMSG_3 = GenCommitMSG(GenPkey(GenSkey(DeriveNextPathSecret(path_secret_a_2))),DeriveNextPathSecret(path_secret_c_1),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))),DeriveNextPathSecret(DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a_2))))))),Path_Secret_W_S5,Secret2bitstring(DeriveNextPathSecret(path_secret_c_1)))),commitMSG_2 = GenCommitMSG(GenPkey(GenSkey(path_secret_b_2)),DeriveNextPathSecret(path_secret_a_2),GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))),DeriveNextPathSecret(DeriveNextPathSecret(path_secret_b_2)))))),Path_Secret_X_S4,Secret2bitstring(DeriveNextPathSecret(path_secret_a_2)))),mac_4 = GenMAC(GenMACkey(DeriveMembershipSecret(DeriveEpochSecret(DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),Alice_Pkey_S2,Pkey2bitstring(GenPkey(GenSkey(path_secret_a[])))),AlicePkey_2 = GenPkey(GenSkey(path_secret_a[])),welcomeMSG = GenWelcomeMSG(GenPkey(BobSkey[]),DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[]))),GenSign(AliceSignkey[],WelcomeTBS(DeriveNextPathSecret(path_secret_a[]),DeriveJoinerSecret(epoch_secret_0[],DeriveNextPathSecret(DeriveNextPathSecret(path_secret_a[])))))),AliceSign = GenSign(ASsignkey[],KPGTBS(GenPkey(AliceSkey[]),GenVerifyKey(AliceSignkey[]))),AliceVerifyKey_1 = GenVerifyKey(AliceSignkey[]),AlicePkey_1 = GenPkey(AliceSkey[])]
+RESULT inj-event(RECV(CharlieID)) ==> inj-event(SEND(BobID)) is true.
+
+--------------------------------------------------------------
+Verification summary:
+
+Query not attacker_p1(MESSAGE2) is true.
+
+Query not event(RECV(CharlieID)) cannot be proved.
+
+Query inj-event(RECV(CharlieID)) ==> inj-event(SEND(BobID)) is true.
+
+--------------------------------------------------------------
+
