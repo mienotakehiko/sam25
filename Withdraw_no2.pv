@@ -1,0 +1,440 @@
+(* Code.2 The model of members leaving the group during the course of the game. *)
+
+type ClientID.
+type Cipher.
+type Pkey.
+type Skey.
+type Signkey.
+type Verifykey.
+type Signature.
+type Secret.
+type MAC.
+type MACkey.
+
+channel PublicCh.
+channel AliceCh.
+channel BobCh.
+channel CharlieCh.
+
+const AliceID:ClientID.
+const BobID:ClientID.
+const CharlieID:ClientID.
+
+(* Encryption/decryption function. *)
+fun GenPkey(Skey):Pkey.
+fun Enc(Pkey, bitstring):Cipher.
+fun Dec(Skey, Cipher):bitstring.
+equation forall skey_:Skey, plain_:bitstring;
+	Dec(skey_, Enc(GenPkey(skey_), plain_)) = plain_.
+
+(* Signature function. *)
+fun GenVerifyKey(Signkey):Verifykey.
+fun GenSign(Signkey, bitstring):Signature.
+reduc forall signkey_:Signkey, plain_:bitstring;
+	Verify(GenVerifyKey(signkey_), GenSign(signkey_, plain_), plain_) = true.
+
+(* MAC function. *)
+fun GenMAC(MACkey, bitstring, bitstring):MAC.
+
+(* MAC key, tag, MAC target. *)
+(* MAC tag: A tag that clarifies the MAC target. *)
+const Alice_Pkey_S2:bitstring.
+const Path_Secret_X_S3:bitstring.
+const Bob_Pkey_S3:bitstring.
+const Path_Secret_X_S4:bitstring.
+const Alice_Pkey_S4:bitstring.
+const X_Pkey_S4:bitstring.
+const Path_Secret_W_S5:bitstring.
+const Charlie_Pkey_S5:bitstring.
+const W_Pkey_S5:bitstring.
+const Path_Secret_W_P7:bitstring.
+const Bob_Pkey_P7:bitstring.
+const W_Pkey_P7:bitstring.
+const Path_Secret_W_P8:bitstring.
+const Alice_Revoke_P8:bitstring.
+
+(* Welcome message. *)
+
+fun GenWelcomeMSG(Pkey, Secret, Secret, Signature):Cipher.
+(* KPG public key of the recipient., path_secret, joiner_secret *)
+
+(* The following is a function for extracting the contents of the welcome message. *)
+fun GetPathSecret_fromWelcome(Skey, Cipher):Secret.
+equation forall skey_:Skey, path_secret_:Secret, joiner_secret_:Secret, signature_:Signature;
+	GetPathSecret_fromWelcome(skey_, GenWelcomeMSG(GenPkey(skey_), path_secret_, joiner_secret_, signature_)) = path_secret_.
+fun GetJoinerSecret_fromWelcome(Skey, Cipher):Secret.
+equation forall skey_:Skey, path_secret_:Secret, joiner_secret_:Secret, signature_:Signature;
+	GetJoinerSecret_fromWelcome(skey_, GenWelcomeMSG(GenPkey(skey_), path_secret_, joiner_secret_, signature_)) = joiner_secret_.
+fun GetSignature_fromWelcome(Skey, Cipher):Signature.
+equation forall skey_:Skey, path_secret_:Secret, joiner_secret_:Secret, signature_:Signature;
+	GetSignature_fromWelcome(skey_, GenWelcomeMSG(GenPkey(skey_), path_secret_, joiner_secret_, signature_)) = signature_.
+(*******************)
+
+fun GenCommitMSG(Pkey, Secret, MAC):Cipher.
+(* KPG public key of the recipient, path_secret, MAC *)
+
+(* The following is a function for extracting the contents of a commit message. *)
+fun GetPathSecret_fromCommit(Skey, Cipher):Secret.
+equation forall skey_:Skey, path_secret_:Secret, mac_:MAC;
+	GetPathSecret_fromCommit(skey_, GenCommitMSG(GenPkey(skey_), path_secret_, mac_)) = path_secret_.
+fun GetMAC_fromCommit(Skey, Cipher):MAC.
+equation forall skey_:Skey, path_secret_:Secret, mac_:MAC;
+	GetMAC_fromCommit(skey_, GenCommitMSG(GenPkey(skey_), path_secret_, mac_)) = mac_.
+(*******************)
+
+(* Secret derivation function of Key Schedule. *)
+
+fun DeriveJoinerSecret(Secret, Secret):Secret.
+(* epoch_secret + commit_secret -> joiner_secret *)
+fun DeriveEpochSecret(Secret):Secret.
+(* joiner_secret -> next_epoch_secret *)
+fun DeriveMembershipSecret(Secret):Secret.
+(* epoch_secret -> membership_secret *)
+fun DeriveEncriptionSecret(Secret):Secret.
+(* epoch_secret -> encryption_secret *)
+fun DeriveNextPathSecret(Secret):Secret.
+(* path_secret -> next_path_secret or commit_secret *)
+
+(* Key Generation Function. *)
+fun GenSkey(Secret):Skey.
+(* path_secret -> Private Key. *)
+fun GenMACkey(Secret):MACkey.
+(* membership_secret -> MAC key. *)
+
+(* Type conversion. *)
+
+fun Pkey2bitstring(Pkey):bitstring.
+fun Secret2bitstring(Secret):bitstring.
+fun KPGTBS(Pkey, Verifykey):bitstring.
+fun WelcomeTBS(Secret, Secret):bitstring.
+(* path_secret and joiner_secret are signed. *)
+
+(* Event. *)
+
+const MESSAGE:bitstring[private].
+const MESSAGE2:bitstring[private].
+event SEND(ClientID).
+event RECV(ClientID).
+
+(* Attackers' behavior settings. *)
+(* set attacker = passive. *)
+
+(* Query. *)
+
+query attacker(MESSAGE2).
+query event(RECV(CharlieID)).
+query inj-event(RECV(CharlieID))==>inj-event(SEND(BobID)). 
+
+let Alice(mysignkey:Signkey, mykpgSkey:Skey, ASVerifyKey:Verifykey) = 
+	(* Stage 1 : Group Creation*)
+	new epoch_secret_0:Secret;
+	new path_secret_a:Secret;
+	let myskey = GenSkey(path_secret_a) in
+	let mypkey = GenPkey(myskey) in
+	let path_secret_x = DeriveNextPathSecret(path_secret_a) in
+	let commit_secret = DeriveNextPathSecret(path_secret_x) in
+	let joiner_secret_0 = DeriveJoinerSecret(epoch_secret_0, commit_secret) in
+	(* Stage 2 : Invitation from Alice to Bob *)
+	in(PublicCh, (BobkpgPkey:Pkey, BobkpgVerifyKey:Verifykey, BobkpgSign:Signature));
+	let BobkpgTBS = KPGTBS(BobkpgPkey, BobkpgVerifyKey) in
+	if(Verify(ASVerifyKey, BobkpgSign, BobkpgTBS)) then
+	(
+		(* Send a welcome message to Bob. *)
+		out(BobCh, GenWelcomeMSG(BobkpgPkey, path_secret_x, joiner_secret_0, GenSign(mysignkey, WelcomeTBS(path_secret_x, joiner_secret_0))));
+		(* Moved to epoch1. *)
+		let epoch_secret_1 = DeriveEpochSecret(joiner_secret_0) in
+		(* Publish your own node public key. *)
+		let membership_secret_1 = DeriveMembershipSecret(epoch_secret_1) in
+		let mackey1 = GenMACkey(membership_secret_1) in
+		out(PublicCh, (mypkey, GenMAC(mackey1, Alice_Pkey_S2, Pkey2bitstring(mypkey))));
+
+	(* Stage 3 : Bob renews his Nodekey *)
+		in(AliceCh, commitMSG:Cipher);
+		let path_secret_x = GetPathSecret_fromCommit(myskey, commitMSG) in
+		let commit_secret = DeriveNextPathSecret(path_secret_x) in
+		(* Authenticate the commit message. *)
+		let mac = GetMAC_fromCommit(myskey, commitMSG) in
+		if(mac = GenMAC(mackey1, Path_Secret_X_S3, Secret2bitstring(path_secret_x))) then
+		(
+			(* Moved to epoch2. *)
+			let joiner_secret_1 = DeriveJoinerSecret(epoch_secret_1, commit_secret) in
+			let epoch_secret_2 = DeriveEpochSecret(joiner_secret_1) in
+			let membership_secret_2 = DeriveMembershipSecret(epoch_secret_2) in
+			let mackey2 = GenMACkey(membership_secret_2) in
+			(* Authenticate Bob's NodeKey. *)
+			in(PublicCh, (BobPkey:Pkey, mac:MAC));
+			if(mac = GenMAC(mackey2, Bob_Pkey_S3, Pkey2bitstring(BobPkey))) then
+			(
+	(* Stage 4 : Invitation from Alice to Charlie *)
+				in(PublicCh, (CharliekpgPkey:Pkey, CharlieVerifyKey:Verifykey, CharliekpgSign:Signature));
+				let CharliekpgTBS = KPGTBS(CharliekpgPkey, CharlieVerifyKey) in
+				if(Verify(ASVerifyKey, CharliekpgSign, CharliekpgTBS)) then
+				(
+					new path_secret_a:Secret;
+					let myskey = GenSkey(path_secret_a) in
+					let mypkey = GenPkey(myskey) in
+					let path_secret_x = DeriveNextPathSecret(path_secret_a) in
+					let path_secret_w = DeriveNextPathSecret(path_secret_x) in
+					let commit_secret = DeriveNextPathSecret(path_secret_w) in
+					let joiner_secret_2 = DeriveJoinerSecret(epoch_secret_2, commit_secret) in
+					(* Send a welcome message to Charlie. *)
+					out(CharlieCh, GenWelcomeMSG(CharliekpgPkey, path_secret_w, joiner_secret_2, GenSign(mysignkey, WelcomeTBS(path_secret_w, joiner_secret_2))));
+					(* Moved to epoch3. *)
+					let epoch_secret_3 = DeriveEpochSecret(joiner_secret_2) in
+					let membership_secret_3 = DeriveMembershipSecret(epoch_secret_3) in
+					let mackey3 = GenMACkey(membership_secret_3) in
+					(* Send a commit message to Bob. *)
+					out(BobCh, GenCommitMSG(BobPkey, path_secret_x, GenMAC(mackey2, Path_Secret_X_S4, Secret2bitstring(path_secret_x))));
+					(*“Myself” and ‘X's node public key’ are published *)
+					out(PublicCh, (mypkey, GenMAC(mackey3, Alice_Pkey_S4, Pkey2bitstring(mypkey))));
+					let xskey = GenSkey(path_secret_x) in
+					let xpkey = GenPkey(xskey) in
+					out(PublicCh, (xpkey, GenMAC(mackey3, X_Pkey_S4, Pkey2bitstring(xpkey))));
+	(* Stage 5 : Charlie renews his NodeKey *)
+					(* Received a commit message from Charlie. *)
+					in(AliceCh, commitMSG:Cipher);
+					let path_secret_w = GetPathSecret_fromCommit(xskey, commitMSG) in
+					let commit_secret = DeriveNextPathSecret(path_secret_w) in
+					let mac = GetMAC_fromCommit(xskey, commitMSG) in
+					if(mac = GenMAC(mackey3, Path_Secret_W_S5, Secret2bitstring(path_secret_w))) then
+					(
+						(* Moved to epoch4. *)
+						let joiner_secret_3 = DeriveJoinerSecret(epoch_secret_3, commit_secret) in
+						let epoch_secret_4 = DeriveEpochSecret(joiner_secret_3) in
+						let membership_secret_4 = DeriveMembershipSecret(epoch_secret_4) in
+						let mackey4 = GenMACkey(membership_secret_4) in
+						(* Received W's public key and authenticated. *)
+						in(PublicCh, (wpkey:Pkey, mac:MAC));
+						if(mac = GenMAC(mackey4, W_Pkey_S5, Pkey2bitstring(wpkey))) then
+						(
+	(* Stage 6 : Secret group message from Charlie *)
+							let wskey = GenSkey(path_secret_w) in
+							in(PublicCh, msg:Cipher);
+							if(Dec(wskey, msg) = MESSAGE) then
+							(
+								event RECV(AliceID);
+	(* Stage 7 : Bob revokes Alice *)
+								in(AliceCh, revoke_mac:MAC);
+								if(revoke_mac = GenMAC(mackey4, Alice_Revoke_P8, Alice_Revoke_P8)) then
+								(
+									(* Pass confidential information to an attacker. *)
+									phase 1;
+									out(PublicCh, (epoch_secret_4, path_secret_a, path_secret_x, path_secret_w))
+	(* Stage 8 : Secret group message from Bob *)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	).
+
+let Bob(mysignkey:Signkey, mykpgSkey:Skey, ASVerifyKey:Verifykey) = 
+	(* Alice received the KeyPackage. *)
+	in(PublicCh, (AlicePkey:Pkey, AliceVerifyKey:Verifykey, AliceSign:Signature));
+	let AlicekpgTBS = KPGTBS(AlicePkey, AliceVerifyKey) in
+	(* Stage 2 : Invitation from Alice to Bob *)
+	(* Verifying Alice's KeyPackage. *)
+	if(Verify(ASVerifyKey, AliceSign, AlicekpgTBS)) then
+	(
+		(* Received a welcome message from Alice. *)
+		in(BobCh, welcomeMSG:Cipher);
+		let path_secret_x = GetPathSecret_fromWelcome(mykpgSkey, welcomeMSG) in
+		let joiner_secret_0 = GetJoinerSecret_fromWelcome(mykpgSkey, welcomeMSG) in
+		let epoch_secret_1 = DeriveEpochSecret(joiner_secret_0) in
+		let signature = GetSignature_fromWelcome(mykpgSkey, welcomeMSG) in
+
+		if(Verify(AliceVerifyKey, signature, WelcomeTBS(path_secret_x, joiner_secret_0))) then
+		(
+			(* Verification of Alice's public key *)
+			let membership_secret_1 = DeriveMembershipSecret(epoch_secret_1) in
+			let mackey1 = GenMACkey(membership_secret_1) in
+			in(PublicCh, (AlicePkey:Pkey, mac:MAC));
+			if(mac = GenMAC(mackey1, Alice_Pkey_S2, Pkey2bitstring(AlicePkey))) then
+			(
+	(* Stage 3 : Bob renews his Nodekey *)
+				new path_secret_b:Secret;
+				let myskey = GenSkey(path_secret_b) in
+				let mypkey = GenPkey(myskey) in
+				let path_secret_x = DeriveNextPathSecret(path_secret_b) in
+				let commit_secret = DeriveNextPathSecret(path_secret_x) in
+				(* Send the commit message (path_secret) to Alice. *)
+				out(AliceCh, GenCommitMSG(AlicePkey, path_secret_x, GenMAC(mackey1, Path_Secret_X_S3, Secret2bitstring(path_secret_x))));
+				(* Moved to epoch2. *)
+				let joiner_secret_1 = DeriveJoinerSecret(epoch_secret_1, commit_secret) in
+				let epoch_secret_2 = DeriveEpochSecret(joiner_secret_1) in
+				let membership_secret_2 = DeriveMembershipSecret(epoch_secret_2) in
+				(* Publish your own node public key. *)
+				let mackey2 = GenMACkey(membership_secret_2) in
+				out(PublicCh, (mypkey, GenMAC(mackey2, Bob_Pkey_S3, Pkey2bitstring(mypkey))));
+
+	(* Stage 4 : Invitation from Alice to Charlie *)
+				(* Received a commit message from Alice. *)
+				in(BobCh, commitMSG:Cipher);
+				let path_secret_x = GetPathSecret_fromCommit(myskey, commitMSG) in
+				let path_secret_w = DeriveNextPathSecret(path_secret_x) in
+				let commit_secret = DeriveNextPathSecret(path_secret_w) in
+				let mac = GetMAC_fromCommit(myskey, commitMSG) in
+				if(mac = GenMAC(mackey2, Path_Secret_X_S4, Secret2bitstring(path_secret_x))) then
+				(
+					(* Moved to epoch3. *)
+					let joiner_secret_2 = DeriveJoinerSecret(epoch_secret_2, commit_secret) in
+					let epoch_secret_3 = DeriveEpochSecret(joiner_secret_2) in
+					let membership_secret_3 = DeriveMembershipSecret(epoch_secret_3) in
+					let mackey3 = GenMACkey(membership_secret_3) in
+					let xskey = GenSkey(path_secret_x) in
+	(* Stage 5 : Charlie renews his NodeKey *)
+					(* Received a commit message from Charlie. *)
+					in(BobCh, commitMSG:Cipher);
+					let path_secret_w = GetPathSecret_fromCommit(xskey, commitMSG) in
+					let commit_secret = DeriveNextPathSecret(path_secret_w) in
+					let mac = GetMAC_fromCommit(xskey, commitMSG) in
+					if(mac = GenMAC(mackey3, Path_Secret_W_S5, Secret2bitstring(path_secret_w))) then
+					(
+						(* Moved to epoch4. *)
+						let joiner_secret_3 = DeriveJoinerSecret(epoch_secret_3, commit_secret) in
+						let epoch_secret_4 = DeriveEpochSecret(joiner_secret_3) in
+						let membership_secret_4 = DeriveMembershipSecret(epoch_secret_4) in
+						let mackey4 = GenMACkey(membership_secret_4) in
+						(* Received W's public key and authenticated. *)
+						in(PublicCh, (wpkey:Pkey, mac:MAC));
+						if(mac = GenMAC(mackey4, W_Pkey_S5, Pkey2bitstring(wpkey))) then
+						(
+	(* Stage 6 : Secret group message from Charlie *)
+							let wskey = GenSkey(path_secret_w) in
+							in(PublicCh, msg:Cipher);
+							if(Dec(wskey, msg) = MESSAGE) then
+							(
+								event RECV(BobID);
+	(* Stage 7 : Bob revokes Alice *)
+								new path_secret_b:Secret;
+								let myskey = GenSkey(path_secret_b) in
+								let mypkey = GenPkey(myskey) in
+								let path_secret_w = DeriveNextPathSecret(path_secret_b) in
+								let commit_secret = DeriveNextPathSecret(path_secret_w) in
+								(* Send commit message only to Charlie. *)
+								in(PublicCh, (CharliePkey:Pkey, mac:MAC));
+								if(mac = GenMAC(mackey4, Charlie_Pkey_S5, Pkey2bitstring(CharliePkey))) then
+								(
+									out(CharlieCh, GenCommitMSG(CharliePkey, path_secret_w, GenMAC(mackey4, Path_Secret_W_P7, Secret2bitstring(path_secret_w))));
+									phase 1;
+									(* “Myself” and ‘W's node public key’ are published. *)
+									out(PublicCh, (mypkey, GenMAC(mackey4, Bob_Pkey_P7, Pkey2bitstring(mypkey))));
+									let wskey = GenSkey(path_secret_w) in
+									let wpkey = GenPkey(wskey) in
+									out(PublicCh, (wpkey, GenMAC(mackey4, W_Pkey_P7, Pkey2bitstring(wpkey))));
+
+	(* Stage 8 : Secret group message from Bob *)
+									event SEND(BobID);
+									out(PublicCh, Enc(wpkey, MESSAGE2))
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	).
+
+let Charlie(mysignkey:Signkey, mykpgSkey:Skey, ASVerifyKey:Verifykey) = 
+	(* Alice received the KeyPackage. *)
+	in(PublicCh, (AlicePkey:Pkey, AliceVerifyKey:Verifykey, AliceSign:Signature));
+	let AlicekpgTBS = KPGTBS(AlicePkey, AliceVerifyKey) in
+	if(Verify(ASVerifyKey, AliceSign, AlicekpgTBS)) then
+	(
+	(* Stage 4 : Invitation from Alice to Charlie *)
+		(* Received a welcome message from Alice. *)
+		in(CharlieCh, welcomeMSG:Cipher);
+		let path_secret_w = GetPathSecret_fromWelcome(mykpgSkey, welcomeMSG) in
+		let joiner_secret_2 = GetJoinerSecret_fromWelcome(mykpgSkey, welcomeMSG) in
+		let signature = GetSignature_fromWelcome(mykpgSkey, welcomeMSG) in
+		if(Verify(AliceVerifyKey, signature, WelcomeTBS(path_secret_w, joiner_secret_2))) then
+		(
+			let epoch_secret_3 = DeriveEpochSecret(joiner_secret_2) in
+			let membership_secret_3 = DeriveMembershipSecret(epoch_secret_3) in
+			let mackey3 = GenMACkey(membership_secret_3) in
+			
+			in(PublicCh, (xpkey:Pkey, mac:MAC));
+			if(mac = GenMAC(mackey3, X_Pkey_S4, Pkey2bitstring(xpkey))) then
+			(
+	(* Stage 5 : Charlie renews his NodeKey *)
+				new path_secret_c:Secret;
+				let myskey = GenSkey(path_secret_c) in
+				let mypkey = GenPkey(myskey) in
+				let path_secret_w = DeriveNextPathSecret(path_secret_c) in
+				let wskey = GenSkey(path_secret_w) in
+				let wpkey = GenPkey(wskey) in
+				let commit_secret = DeriveNextPathSecret(path_secret_w) in
+				(* Sending the commit message (path_secret) to Alice and Bob. *)
+				out(AliceCh, GenCommitMSG(xpkey, path_secret_w, GenMAC(mackey3, Path_Secret_W_S5, Secret2bitstring(path_secret_w))));
+				out(BobCh, GenCommitMSG(xpkey, path_secret_w, GenMAC(mackey3, Path_Secret_W_S5, Secret2bitstring(path_secret_w))));
+				(* epoch4に移行 *)
+				let joiner_secret_3 = DeriveJoinerSecret(epoch_secret_3, commit_secret) in
+				let epoch_secret_4 = DeriveEpochSecret(joiner_secret_3) in
+				let membership_secret_4 = DeriveMembershipSecret(epoch_secret_4) in
+				let mackey4 = GenMACkey(membership_secret_4) in
+				(* “Myself” and ‘W's node public key’ are published. *)
+				out(PublicCh, (mypkey, GenMAC(mackey4, Charlie_Pkey_S5, Pkey2bitstring(mypkey))));
+				out(PublicCh, (wpkey, GenMAC(mackey4, W_Pkey_S5, Pkey2bitstring(wpkey))));
+
+	(* Stage 6 : Secret group message from Charlie *)
+				out(PublicCh, Enc(wpkey, MESSAGE));
+	(* Stage 7 : Bob revokes Alice *)
+				(* Received commit message from Bob. *)
+				in(CharlieCh, commitMSG:Cipher);
+				let path_secret_w = GetPathSecret_fromCommit(myskey, commitMSG) in
+				let commit_secret = DeriveNextPathSecret(path_secret_w) in
+				let mac = GetMAC_fromCommit(myskey, commitMSG) in
+				if(mac = GenMAC(mackey4, Path_Secret_W_P7, Secret2bitstring(path_secret_w))) then
+				(
+					(* Sends a revoke message to Alice after the commit is approved. *)
+					out(AliceCh, (Alice_Revoke_P8, GenMAC(mackey4, Alice_Revoke_P8, Alice_Revoke_P8)));
+					phase 1;
+					(* Moved to epoch5. *)
+					let joiner_secret_4 = DeriveJoinerSecret(epoch_secret_4, commit_secret) in
+					let epoch_secret_5 = DeriveEpochSecret(joiner_secret_4) in
+					let membership_secret_5 = DeriveMembershipSecret(epoch_secret_5) in
+					let mackey5 = GenMACkey(membership_secret_5) in
+	(* Stage 8 : Secret group message from Bob *)
+					let wskey = GenSkey(path_secret_w) in
+					in(PublicCh, msg:Cipher);
+					if(Dec(wskey, msg) = MESSAGE2) then
+					(
+						event RECV(CharlieID)
+					)
+				)
+			)
+		)
+	).
+
+process
+	new ASsignkey:Signkey;
+	let ASverifyKey = GenVerifyKey(ASsignkey) in
+
+	(* Stage 0 : Register Each KeyPackages *)
+	new AliceSkey:Skey;
+	let AlicePkey = GenPkey(AliceSkey) in
+	new AliceSignkey:Signkey;
+	let AliceVerifyKey = GenVerifyKey(AliceSignkey) in
+
+	new BobSkey:Skey;
+	let BobPkey = GenPkey(BobSkey) in
+	new BobSignkey:Signkey;
+	let BobVerifyKey = GenVerifyKey(BobSignkey) in
+
+	new CharlieSkey:Skey;
+	let CharliePkey = GenPkey(CharlieSkey) in
+	new CharlieSignkey:Signkey;
+	let CharlieVerifyKey = GenVerifyKey(CharlieSignkey) in
+
+	out(PublicCh, ASverifyKey);
+	out(PublicCh, (AlicePkey, AliceVerifyKey, GenSign(ASsignkey, KPGTBS(AlicePkey, AliceVerifyKey))));
+	out(PublicCh, (BobPkey, BobVerifyKey, GenSign(ASsignkey, KPGTBS(BobPkey, BobVerifyKey))));
+	out(PublicCh, (CharliePkey, CharlieVerifyKey, GenSign(ASsignkey, KPGTBS(CharliePkey, CharlieVerifyKey))));
+
+	(
+		Alice(AliceSignkey, AliceSkey, ASverifyKey) |
+		Bob(BobSignkey, BobSkey, ASverifyKey) |
+		Charlie(CharlieSignkey, CharlieSkey, ASverifyKey)
+	)
